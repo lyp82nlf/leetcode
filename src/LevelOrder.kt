@@ -1,5 +1,5 @@
 import Utils.TreeNode
-import Utils.generateTreeNodeList
+import TreeNode.generateTreeNodeList
 import java.util.*
 import kotlin.collections.ArrayList
 

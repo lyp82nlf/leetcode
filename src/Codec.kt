@@ -1,6 +1,5 @@
 import Utils.TreeNode
-import Utils.generateTreeNodeList
-import java.lang.StringBuilder
+import TreeNode.generateTreeNodeList
 import java.util.*
 
 class Codec {

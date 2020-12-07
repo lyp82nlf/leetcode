@@ -1,7 +1,6 @@
 package TreeNode
 
 import Utils.TreeNode
-import Utils.generateTreeNodeList
 import java.util.*
 
 class InorderTraversal {

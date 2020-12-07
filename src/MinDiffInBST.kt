@@ -1,6 +1,5 @@
 import Utils.TreeNode
-import Utils.generateTreeNodeList
-import kotlin.math.min
+import TreeNode.generateTreeNodeList
 
 class MinDiffInBST {
     var list = mutableListOf<Int>()

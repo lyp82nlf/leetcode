@@ -1,6 +1,5 @@
 import Utils.TreeNode
-import Utils.generateTreeNodeList
-import kotlin.math.min
+import TreeNode.generateTreeNodeList
 
 class MinCameraCover {
     var sum = 0
@@ -44,6 +43,6 @@ class MinCameraCover {
 }
 
 fun main() {
-    var root = generateTreeNodeList(arrayOf(0, 0,  0))
+    var root = generateTreeNodeList(arrayOf(0, 0, 0))
     println(MinCameraCover().minCameraCover(root))
 }

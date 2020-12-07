@@ -1,5 +1,6 @@
-package Utils
+package TreeNode
 
+import Utils.TreeNode
 import java.util.*
 
 
@@ -13,11 +14,11 @@ import java.util.*
 
 */
 fun generateTreeNodeList(): TreeNode {
-    var result: TreeNode = TreeNode(3)
-    var result1: TreeNode = TreeNode(9)
-    var result2: TreeNode = TreeNode(20)
-    var result3: TreeNode = TreeNode(15)
-    var result4: TreeNode = TreeNode(7)
+    val result: TreeNode = TreeNode(3)
+    val result1: TreeNode = TreeNode(9)
+    val result2: TreeNode = TreeNode(20)
+    val result3: TreeNode = TreeNode(15)
+    val result4: TreeNode = TreeNode(7)
     result.left = result1
     result.right = result2
     result2.left = result3

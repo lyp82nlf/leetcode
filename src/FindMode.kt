@@ -1,7 +1,5 @@
-import Utils.ListNodeUtil.generateListNode
 import Utils.TreeNode
-import Utils.generateTreeNodeList
-import kotlin.math.max
+import TreeNode.generateTreeNodeList
 
 class FindMode {
     var arr = mutableListOf<Int>()
