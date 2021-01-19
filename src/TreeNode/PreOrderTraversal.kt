@@ -22,4 +22,21 @@ class PreOrderTraversal {
         }
         return res
     }
+
+    fun preorderTraversalDayOne(root: TreeNode?): List<Int> {
+        var root = root
+        val stack = Stack<TreeNode?>()
+        val res = mutableListOf<Int>()
+        while (stack.isNotEmpty() || root != null) {
+            while (root != null) {
+                res.add(root.`val`)
+                stack.push(root)
+                root = root.left
+            }
+            root = stack.pop()
+            root = root!!.right
+        }
+        return res
+    }
+}
 }
