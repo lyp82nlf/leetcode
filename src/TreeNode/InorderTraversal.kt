@@ -53,9 +53,6 @@ class InorderTraversal {
 
     fun inOrderTraversalTwoDay(root: TreeNode): List<Int> {
         val res = mutableListOf<Int>()
-        if (root == null) {
-            return res
-        }
         val stack = Stack<TreeNode>()
         var root = root
         while (!stack.isEmpty() || root != null) {
@@ -70,6 +67,21 @@ class InorderTraversal {
         return res
     }
 
+    fun inOrderTraversalThirdDay(root: TreeNode): List<Int> {
+        val res = mutableListOf<Int>()
+        val stack = Stack<TreeNode>()
+        var root:TreeNode? = root
+        while (stack.isNotEmpty() || root != null) {
+            while (root != null) {
+                stack.push(root)
+                root = root.left
+            }
+            root = stack.pop()
+            res.add(root.`val`)
+            root = root.right
+        }
+        return res
+    }
 
 }
 
