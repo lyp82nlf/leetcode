@@ -10,3 +10,10 @@ fun IntArray.print() {
         print("  $it")
     }
 }
+
+fun IntArray.println() {
+    this.forEach {
+        print(" $it")
+    }
+    println(" ")
+}
