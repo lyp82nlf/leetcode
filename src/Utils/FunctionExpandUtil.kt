@@ -7,3 +7,10 @@ fun Any.print() {
 fun Any.println() {
     println(this)
 }
+
+fun IntArray.println() {
+    for (index in this){
+        print(index)
+        print(" ")
+    }
+}
